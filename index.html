@@ -12,6 +12,8 @@
         #result { margin-top: 20px; color: #fff; }
         .dl-btn { display: inline-block; background: #28a745; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
     </style>
+    <meta name="description" content="أسرع أداة مجانية لتحميل فيديوهات تيك توك بدون علامة مائية - Aroob KH">
+
 </head>
 <body>
     <h1>AROOB KH</h1>
@@ -32,9 +34,9 @@
             resDiv.innerHTML = "جاري التحميل...";
             try {
                 // محرك بديل
-                const response = await fetch(`https://api.vkrdownloader.com/server?v=${encodeURIComponent(url)}`);
-                const data = await response.json();
-                
+                   const response = await fetch(`https://api.vkrdownloader.com/server?v=${encodeURIComponent(url)}`);
+    const data = await response.json();
+ 
                 if(data.data.url) {
                     resDiv.innerHTML = `
                         <p>تم تجهيز الفيديو بنجاح!</p>
